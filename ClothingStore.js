@@ -1,9 +1,10 @@
-
-
 try {
-  const clothes = axios.get("https://fakestoreapi.com/products");
-  console.log(clothes);
+  axios.get("https://fakestoreapi.com/products").then(res => {
+    console.log(res.json());
+  });
 } catch (err) {
   console.log(err);
 }
-return ('hello')
+
+let hello = "Hello from js";
+return hello;
