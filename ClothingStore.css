@@ -1,27 +1,39 @@
 body {
-    background-image: url("IMG_6214.JPEG");
-    background-position: bottom;
-
+  background-image: url("IMG_6214.JPEG");
+  background-position: bottom;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 p {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 img {
-    border: 2px solid #333;
-    border-radius: 10px;
-    max-width: 100%;
-    image-rendering: auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 100%;
+  image-rendering: auto;
 }
 
 footer {
-    background-color: white;
+  background-color: white;
+}
+.product-item {
+  background-color: #fff; /* White background for product cards */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  width: 250px; /* Fixed width for products */
+  margin: 15px; /* Spacing between items */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+  text-align: center;
+  image-align: center;
 }
