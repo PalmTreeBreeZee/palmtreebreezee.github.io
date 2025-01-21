@@ -20,7 +20,7 @@ function displayProducts(products) {
       console.log(product)
       const productItem = document.createElement('div');
       productItem.className = 'product-item';
-      productItem.innerHTML = `<h3>${product.title}</h3><p>Price: ${product.price}</p>`;
+      productItem.innerHTML = `<img src=${product.image} width="100px" height="100px"><h3>${product.title}</h3><p>Price: ${product.price}</p>`;
       productListElement.appendChild(productItem);
   });
 }

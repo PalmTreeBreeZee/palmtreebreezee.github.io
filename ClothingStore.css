@@ -26,14 +26,21 @@ img {
 footer {
   background-color: white;
 }
+#product-list {
+  display: flex; /* Enable flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute extra space between items */
+  padding: 20px; /* Padding for the container */
+}
+
+/* Individual product item styles */
 .product-item {
   background-color: #fff; /* White background for product cards */
   border: 1px solid #ddd; /* Light grey border */
   border-radius: 8px; /* Rounded corners */
-  width: 250px; /* Fixed width for products */
-  margin: 15px; /* Spacing between items */
+  width: calc(45% - 30px); /* Adjust width to fit at least two items */
+  margin: 15px; /* Space around items */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.2s; /* Smooth scaling on hover */
-  text-align: center;
-  image-align: center;
+  text-align: center; /* Center text */
 }
