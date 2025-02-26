@@ -2,18 +2,38 @@ body {
   background-image: url("IMG_6214.JPEG");
   background-position: bottom;
 }
+#banner {
+  border-radius: 50px;
+  background: #453727;
+  box-shadow:
+    inset 25px 25px 50px #2b2319,
+    inset -25px -25px 50px #5f4b35;
+  display: flex;
+}
+#skull {
+  display: flex;
+  padding: 20px 50px 20px 50px;
+}
+#path {
+  padding: 20px;
+}
 
 h1 {
   text-align: center;
-
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-family: arial;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
 }
 
 p {
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-family: arial;
 }
 
 img {
@@ -35,7 +55,11 @@ footer {
 
 /* Individual product item styles */
 .product-item {
-  background-color: #fff; /* White background for product cards */
+  border-radius: 50px;
+  background: #453727;
+  box-shadow:
+    inset 25px 25px 50px #2b2319,
+    inset -25px -25px 50px #5f4b35;
   border: 1px solid #ddd; /* Light grey border */
   border-radius: 8px; /* Rounded corners */
   width: calc(45% - 30px); /* Adjust width to fit at least two items */
@@ -43,4 +67,48 @@ footer {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.2s; /* Smooth scaling on hover */
   text-align: center; /* Center text */
+}
+.label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #394a56;
+}
+
+.label-text {
+  margin-left: 16px;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6,
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
 }

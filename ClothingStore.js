@@ -20,7 +20,17 @@ function displayProducts(products) {
       console.log(product)
       const productItem = document.createElement('div');
       productItem.className = 'product-item';
-      productItem.innerHTML = `<img src=${product.image} width="100px" height="100px"><h3>${product.title}</h3><p>Price: ${product.price}</p>`;
+      let button =
+   `<label class="label">
+    <p>Add To Cart  :</p>
+    <div class="toggle">
+        <input class="toggle-state" type="checkbox" name="check" value="check">
+        
+        <div class="indicator"></div>
+    </div>
+</label>`;
+      productItem.innerHTML = `<img src=${product.image} width="100px" height="100px"><h3>${product.title}</h3><p>Price: ${product.price}$</p> ${button}`;
+      
       productListElement.appendChild(productItem);
   });
 }
